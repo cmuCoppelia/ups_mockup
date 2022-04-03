@@ -5952,16 +5952,20 @@ html:not(.zAoYTe) .Tg7LZd:focus {
                                     <div class="jtfYYd" data-sokoban-container="SOKOBAN_551804421525577349"
                                          style="flex-shrink:0">
                                         <div class="NJo7tc Z26q7c jGGQ5e" data-header-feature="0">
-                                            <div class="yuRUbf"><a
+                                            <div class="yuRUbf" id = "yuRUbf1"><a
                                                     href="https://backlightblog.com/how-to-go-live-on-tiktok"
+                                                    onmouseover="Show1()" onmouseout="Hide1()"
                                                     data-ved="2ahUKEwiGgvaCktX2AhV2rHIEHTwgB0oQFnoECCMQAQ"
                                                     ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://backlightblog.com/how-to-go-live-on-tiktok&amp;ved=2ahUKEwiGgvaCktX2AhV2rHIEHTwgB0oQFnoECCMQAQ"><br>
                                                 <!--<img src="blue_canary.png" alt="Pulpit rock" width="20" height="20" title = "this site is safe!">-->
-                                                <img src="blue_canary.png" alt="Pulpit rock" width="20" height="20" onmouseover="Show1()" onmouseout="Hide1()">
+                                                <!--<img src="blue_canary.png" alt="Pulpit rock" width="20" height="20" onmouseover="Show1()" onmouseout="Hide1()">-->
                                                 <script>
                                                     function Show1(){
                                                         var e = window.event;
                                                         var obj  = e.target || e.srcElement;
+                                                        var d = document.getElementById("yuRUbf1");
+                                                        var rct = d.getBoundingClientRect();
+                                                        console.log(rct.bottom,rct.left);
                                                         var ele = document.getElementById("hover_over_form_n")
                                                         ele.style.position = "absolute"
                                                         ele.style.zIndex = "1"
